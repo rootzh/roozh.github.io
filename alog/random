@@ -1,0 +1,20 @@
+随机读取文件的一行数据
+
+int random_read(const char* file) {
+    ifstream in(file);
+    string content, chose_content;
+    int i = 1;
+    srand(time(NULL));
+    while(in > content) {
+        if (rand() % i == 0) {
+            chose_content = content;
+        }
+        ++i;
+    }
+    in.close();
+    return 0;
+}
+
+随机重排数组
+
+for i = 1 to n do swap(a[i], a[rand(i,n));
